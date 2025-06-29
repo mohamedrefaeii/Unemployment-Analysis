@@ -1,0 +1,7 @@
+pivot = df.pivot_table(index='region', columns='date', values='estimated_unemployment_rate_%')
+
+plt.figure(figsize=(14, 8))
+sns.heatmap(pivot, cmap='YlOrRd', linewidths=0.1)
+plt.title(" Heatmap of Unemployment Rate Across Regions Over Time")
+plt.tight_layout()
+plt.show()
