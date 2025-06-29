@@ -1,0 +1,3 @@
+print("🔍 Loading unemployment dataset...")
+df = pd.read_csv('Unemployment_in_India.csv')  # Make sure the CSV file is in your directory
+print("✅ Dataset loaded!")
