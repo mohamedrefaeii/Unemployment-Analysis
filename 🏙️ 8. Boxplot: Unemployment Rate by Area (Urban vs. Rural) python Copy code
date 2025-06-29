@@ -1,0 +1,5 @@
+plt.figure(figsize=(10, 5))
+sns.boxplot(x='area', y='estimated_unemployment_rate_%', data=df)
+plt.title("📦 Unemployment Rate Distribution by Area (Urban/Rural)")
+plt.tight_layout()
+plt.show()
