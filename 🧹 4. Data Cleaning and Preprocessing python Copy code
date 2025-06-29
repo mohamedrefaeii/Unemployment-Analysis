@@ -1,0 +1,9 @@
+# Convert 'Date' column to datetime format
+df['Date'] = pd.to_datetime(df['Date'], errors='coerce')
+
+# Check for missing values
+print("\n🧹 Missing values:")
+print(df.isnull().sum())
+
+# Rename columns to clean format (lowercase, underscores)
+df.columns = [col.strip().replace(' ', '_').lower() for col in df.columns]
